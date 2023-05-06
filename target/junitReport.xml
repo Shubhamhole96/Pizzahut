@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="37.076" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="pizzahut order" name="Validate Pizzahut pizza order flow - Example #1.1" time="36.465">
+<system-out><![CDATA[
+Given User launch Pizzahut application with "https://www.pizzahut.co.in/"...passed
+When User wait for auto location black pop up screen........................passed
+Then User close the pop up screen...........................................passed
+And User see pop up for delivery asking for enter location..................passed
+Then User type address as "central mall pune"...............................passed
+And User select first auto populate drop down option........................passed
+When User navigate to deails page...........................................passed
+Then User validate vegetarian radio button flag is off......................passed
+And User clicks on Pizzas menu bar option...................................passed
+When User select add button of any pizza from Recommended...................passed
+Then User see that the pizza is getting added under Your Basket.............passed
+And User validate pizza price plus Tax is checkout price....................passed
+Then User validate checkout button contains 1 Item count....................passed
+And User validate checkout button contains total price count................passed
+Then User clicks on Drinks option...........................................passed
+And User select Pepsi option to add into the Basket.........................passed
+Then User see 2 items are showing under checkout button.....................passed
+And User see total price is now more than before............................passed
+Then User remove the Pizza item from Basket.................................passed
+And see Price tag got removed from the checkout button......................passed
+And User see 1 item showing in checkout button..............................passed
+Then User Clicks on Checkout button.........................................passed
+And User see minimum order required pop up is getting displayed.............passed
+]]></system-out>
+</testcase>
+</testsuite>
